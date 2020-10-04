@@ -1,23 +1,25 @@
 package com.ryanair.flights.service.flightsservice.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Collections;
 import java.util.List;
 
 public class Day {
 
     private final String day;
-    private final List<Flight> flights;
+    private final List<ScheduleFlight> scheduleFlights;
 
-    public Day(final String day, final List<Flight> flights) {
+    public Day(final String day, @JsonProperty("flights") final List<ScheduleFlight> scheduleFlights) {
         this.day = day;
-        this.flights = flights;
+        this.scheduleFlights = scheduleFlights;
     }
 
     public String getDay() {
         return day;
     }
 
-    public List<Flight> getFlights() {
-        return Collections.unmodifiableList(flights);
+    public List<ScheduleFlight> getScheduleFlights() {
+        return Collections.unmodifiableList(scheduleFlights);
     }
 }

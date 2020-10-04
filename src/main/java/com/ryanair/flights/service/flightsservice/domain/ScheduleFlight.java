@@ -3,15 +3,15 @@ package com.ryanair.flights.service.flightsservice.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Flight {
+public class ScheduleFlight {
 
     private final String number;
     private final String departureTime;
     private final String arrivalTime;
 
-    public Flight(final String number,
-                  final String departureTime,
-                  final String arrivalTime) {
+    public ScheduleFlight(final String number,
+                          final String departureTime,
+                          final String arrivalTime) {
 
         this.number = number;
         this.departureTime = departureTime;
