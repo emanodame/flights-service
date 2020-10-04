@@ -22,7 +22,7 @@ public class RoutesServiceTest {
     @Test
     public void shouldSuccessfullyRetrieveRyanairRoutesOnly() {
 
-        final String responseAsString = getRoutesResponseAsString("/non-ryanair-route-response.json");
+        final String responseAsString = getRoutesResponseAsString("/responses/routes/non-ryanair-route-response.json");
         final RoutesService routesService = new RoutesService(buildRoutesClient(responseAsString));
 
         final List<Route> routes = routesService.getRoutes();
@@ -34,7 +34,7 @@ public class RoutesServiceTest {
     @Test
     public void shouldSuccessfullyNullConnectingAirportsOnly() {
 
-        final String responseAsString = getRoutesResponseAsString("/connecting-airports-response.json");
+        final String responseAsString = getRoutesResponseAsString("/responses/routes/connecting-airports-response.json");
 
         final RoutesService routesService = new RoutesService(buildRoutesClient(responseAsString));
 
