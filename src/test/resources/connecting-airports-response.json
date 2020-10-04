@@ -1,0 +1,14 @@
+[
+  {
+    "airportFrom": "LGW",
+    "airportTo": "JFK",
+    "connectingAirport": null,
+    "operator": "RYANAIR"
+  },
+  {
+    "airportFrom": "AAL",
+    "airportTo": "STN",
+    "connectingAirport": "BWB",
+    "operator": "RYANAIR"
+  }
+]
