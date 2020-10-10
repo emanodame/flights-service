@@ -44,6 +44,7 @@ Unfortunately, I had a very busy week/weekend so couldn't completely finish.
 Features that need to be implemented/improved:
 
 - Implement feature to ensure that direct flights are before arrival time. (Should be trivial with additional filtering in DirectFlightsRetriever.java)
+- Change InterconnectingFlightsRetriever.java to have the correct date time format.
 - Move hardcoded client URLs to a application.properties file.
 - Introduce more sub packages in domain package.
 - Introduce Caching to the application for more efficient processing (Routes Client Cache + GraphService for example)
