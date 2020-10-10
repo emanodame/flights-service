@@ -10,5 +10,17 @@
     "airportTo": "STN",
     "connectingAirport": "BWB",
     "operator": "RYANAIR"
+  },
+  {
+    "airportFrom": "LGW",
+    "airportTo": "STN",
+    "connectingAirport": null,
+    "operator": "RYANAIR"
+  },
+  {
+    "airportFrom": "STN",
+    "airportTo": "JFK",
+    "connectingAirport": null,
+    "operator": "RYANAIR"
   }
 ]

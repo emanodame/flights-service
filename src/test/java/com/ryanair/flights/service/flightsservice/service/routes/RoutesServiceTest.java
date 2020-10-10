@@ -40,7 +40,7 @@ public class RoutesServiceTest {
 
         final List<Route> routes = routesService.getRoutes();
 
-        assertThat(routes.size(), is(1));
+        assertThat(routes.size(), is(3));
         assertThat(routes.get(0).getAirportFrom(), is("LGW"));
     }
 

@@ -5,8 +5,6 @@ import feign.Headers;
 import feign.Param;
 import feign.RequestLine;
 
-import java.util.List;
-
 @Headers(value = {"Content-Type: application/json;charset=UTF-8", "Accept: application/json"})
 public interface SchedulesClient {
 
