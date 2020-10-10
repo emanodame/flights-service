@@ -22,7 +22,7 @@ Overview:
 
 **SchedulesService.java**: Retrieves Schedules from endpoint.
 
-**AirportGraphService.java**: Constructs a Graph representation of Airports. This may be overkill for this
+**AirportGraphService.java**: Constructs a Directed Graph representation of Airports. This may be overkill for this
 usecase but it makes finding direct and interconnecting airports very simple.
 
 **FlightsService.java**: Main service which FlightController calls to get all flights.
