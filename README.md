@@ -1,6 +1,5 @@
-flights-service
-
-Microservice responsible for viewing flight information.
+# flights-service
+Flight Service microservice responsible for serving information about flights 
 
 How to run:
 
