@@ -14,25 +14,25 @@ Overview:
 
 [Controller]
 
-FlightController.java: Configuration of endpoint.
+**FlightController.java**: Configuration of endpoint.
 
 [Services]
 
-RoutesService.java: Retrieves Routes from endpoint and applies appropriate filtering
+**RoutesService.java**: Retrieves Routes from endpoint and applies appropriate filtering
 
-SchedulesService.java: Retrieves Schedules from endpoint.
+**SchedulesService.java**: Retrieves Schedules from endpoint.
 
-AirportGraphService.java: Constructs a Graph representation of Airports. This may be overkill for this
+**AirportGraphService.java**: Constructs a Graph representation of Airports. This may be overkill for this
 usecase but it makes finding direct and interconnecting airports very simple.
 
-FlightsService.java: Main service which FlightController calls to get all flights.
+**FlightsService.java**: Main service which FlightController calls to get all flights.
 
-DirectFlightsRetriever.java: Component that will use AirportGraph and get all direct flights. Also uses ScheduleService
+**DirectFlightsRetriever.java**: Component that will use AirportGraph and get all direct flights. Also uses ScheduleService
 get scheduling information. 
 
 e.g If departure = JFK and arrival = MAD. Get Flight if airport graph has JFK -> MAD
 
-InterconnectingFlightsRetriever.java: Component that will use AirportGraph and get all interconnecting flights. Also uses ScheduleService
+**InterconnectingFlightsRetriever.java**: Component that will use AirportGraph and get all interconnecting flights. Also uses ScheduleService
 get scheduling information.
  
 e.g If departure = JFK and arrival = MAD. Get Flight if airport graph has JFK -> BER -> MAD
