@@ -3,7 +3,7 @@ Flight Service microservice responsible for serving information about flights
 
 How to run:
 
-Please just import with Maven. 'mvn clean install'.
+Please just import with Maven. Run 'mvn clean install' with terminal.
 After, start the Spring Boot application via IntelliJ.
 
 Sample Url: http://localhost:8080/flights/interconnections?departure=DUB&arrival=WRO&departureDateTime=2020-10-10T07:00&arrivalDateTime=2020-10-15T21:00
